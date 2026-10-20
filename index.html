@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colegio Reynosa | Colegio franciscano de kínder a preparatoria (propuesta)</title>
+<meta name="description" content="Colegio franciscano en Reynosa: kínder, primaria, secundaria y preparatoria con formación en valores. Inscripciones en línea, clubes deportivos y culturales.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Idea: el saludo franciscano "Paz y Bien" como voz de la página y la tau como marca de cada sección */
+:root{
+  --wine:#6E1F4F;       /* morado vino del escudo */
+  --wine-dark:#521539;
+  --sun:#F2B417;        /* sol del escudo, solo decorativo */
+  --sun-soft:#FFF5D9;
+  --rose:#F7F1F5;
+  --white:#FFFFFF;
+  --ink:#24161F;
+  --muted:#5C4F58;
+  --line:#E6DCE3;
+  --wa:#0B6E39;
+  --r:12px;
+  --serif:"Alegreya",Georgia,serif;
+  --sans:"Alegreya Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--wine)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+h1,h2,h3{font-family:var(--serif);line-height:1.08;margin:0;text-wrap:balance;color:var(--ink)}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}
+/* Tau franciscana */
+.tau{display:inline-block;width:22px;height:26px;flex:none;background:var(--wine);clip-path:polygon(0 0,100% 0,100% 22%,62% 22%,62% 100%,38% 100%,38% 22%,0 22%)}
+
+.proposal{background:var(--ink);color:#fff;font-size:14px}
+.proposal .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.proposal button{background:var(--sun);color:var(--ink);border:0;border-radius:6px;padding:6px 12px;font:inherit;font-weight:700;cursor:pointer}
+
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:74px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:none}
+.brand img{height:54px;width:auto}
+.brand b{font-family:var(--serif);font-size:22px;display:block;line-height:1}
+.brand small{color:var(--muted);font-size:14px}
+nav.main{display:flex;gap:2px;margin-left:auto}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:500;font-size:17px;padding:8px 10px;border-radius:8px}
+nav.main a:hover{background:var(--rose)}
+.plat{flex:none;font-weight:700;font-size:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:999px;font:inherit;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1.2;text-align:center}
+.btn-wine{background:var(--wine);color:#fff}
+.btn-wine:hover{background:var(--wine-dark)}
+.btn-line{border-color:var(--wine);color:var(--wine);background:var(--white)}
+.btn-line:hover{background:var(--wine);color:#fff}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#085A2E}
+.cta-top{flex:none}
+
+/* Portada */
+.hero{background:var(--rose);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-top:56px;padding-bottom:56px}
+.greet{font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(64px,10vw,128px);line-height:.9;color:var(--wine);margin-bottom:16px}
+.hero h1{font-size:clamp(28px,3.6vw,42px);font-weight:800}
+.hero p.lead{color:var(--muted);font-size:19px;max-width:32em;margin:14px 0 24px}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.levels-mini{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.levels-mini a{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;color:var(--ink);font-weight:700;font-size:16px}
+.hero .photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hero .photos img{width:100%;border-radius:var(--r);object-fit:cover}
+.hero .photos .tall{grid-row:span 2;aspect-ratio:2/3;height:100%}
+.hero .photos .sq{aspect-ratio:1}
+
+section.block{padding:72px 0}
+section.alt{background:var(--rose)}
+.sec-head{display:grid;gap:10px;margin-bottom:30px;max-width:720px}
+.sec-head .t{display:flex;align-items:center;gap:12px}
+.sec-head h2{font-size:clamp(32px,4.4vw,50px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:19px}
+
+/* Niveles */
+.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.level{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:10px;border-top:6px solid var(--wine)}
+.level:nth-child(2){border-top-color:#2B6CB0}
+.level:nth-child(3){border-top-color:#4C8A2A}
+.level:nth-child(4){border-top-color:#C98A00}
+.level h3{font-size:28px}
+.level p{color:var(--muted);font-size:17px}
+.level ul{margin:0;padding-left:18px;font-size:16px;display:grid;gap:3px}
+.level .age{font-weight:700;font-size:15px;color:var(--wine)}
+
+/* Instalaciones */
+.facil{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.facil figure{margin:0;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.facil img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.facil figcaption{padding:14px 16px}
+.facil b{display:block;font-family:var(--serif);font-size:22px}
+.facil span{color:var(--muted);font-size:16px}
+.more{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px 24px;color:var(--muted)}
+.more b{color:var(--ink)}
+
+/* Clubes */
+.clubs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.clubs .box{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.clubs h3{font-size:26px;margin-bottom:12px}
+.clubs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.clubs li{background:var(--sun-soft);border-radius:999px;padding:6px 14px;font-weight:700;font-size:16px}
+
+/* Identidad franciscana */
+.ident{display:grid;grid-template-columns:.7fr 1.3fr;gap:44px;align-items:start}
+.ident img{width:100%;max-width:320px;border-radius:var(--r)}
+.ident .text{display:grid;gap:16px}
+.ident .text p{color:var(--muted)}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.values div{border-left:4px solid var(--sun);padding-left:14px}
+.values b{display:block;font-family:var(--serif);font-size:20px}
+.values span{color:var(--muted);font-size:16px}
+
+/* Inscripciones */
+.enroll{background:var(--wine);color:#fff;border-radius:var(--r);padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.enroll h2{color:#fff;font-size:clamp(30px,4vw,44px)}
+.enroll p{color:#F0DDE8;margin-top:10px}
+.enroll ol{margin:16px 0 0;padding-left:22px;display:grid;gap:6px;color:#F7E9F1}
+.enroll .acts{display:grid;gap:10px}
+.enroll .btn-sun{background:var(--sun);color:var(--ink)}
+.enroll .btn-sun:hover{background:#DDA20C}
+.enroll .btn-ghost{border-color:#fff;color:#fff}
+.enroll .btn-ghost:hover{background:#fff;color:var(--wine)}
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact dl{margin:0;display:grid;gap:14px}
+.contact dt{color:var(--muted);font-size:15px}
+.contact dd{margin:0;font-size:20px}
+.contact dd a{font-weight:700}
+.contact img{width:100%;border-radius:var(--r);aspect-ratio:1;object-fit:cover}
+
+footer{background:var(--ink);color:#D5C8D0;padding:32px 0;font-size:16px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:16px}
+
+dialog{border:0;padding:0;border-radius:var(--r);width:min(580px,calc(100vw - 32px));max-height:calc(100vh - 32px);color:var(--ink)}
+dialog::backdrop{background:rgba(36,22,31,.6)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--white)}
+.dh h2{font-size:28px}
+.x{background:none;border:0;font-size:28px;line-height:1;cursor:pointer;width:44px;height:44px;color:var(--ink)}
+.db{padding:16px 20px 22px}
+.db ol{margin:0;padding-left:20px;display:grid;gap:12px}
+.db b{display:block}
+.db span{color:var(--muted);font-size:16px}
+
+@media (max-width:1060px){
+  nav.main{display:none}
+  .plat{margin-left:auto}
+  .levels{grid-template-columns:1fr 1fr}
+}
+@media (max-width:800px){
+  .hero .wrap,.ident,.contact,.enroll{grid-template-columns:1fr}
+  .hero .wrap{padding-top:36px;padding-bottom:40px}
+  .facil{grid-template-columns:1fr 1fr}
+  .clubs{grid-template-columns:1fr}
+  section.block{padding:52px 0}
+  .enroll{padding:24px}
+}
+@media (max-width:540px){
+  .levels,.facil,.values{grid-template-columns:1fr}
+  .brand small{display:none}
+  .brand b{font-size:19px}
+  .brand img{height:44px}
+  .plat{display:none}
+  .cta-top{margin-left:auto;padding:10px 14px}
+}
+</style>
+<style id="refero-theme">
+/* fonts: family=Fraunces:opsz,wght@9..144,600&family=Geist:wght@400;500;600 */
+/* Estilo Refero: Superr, "warm schoolyard notebook". Papel crema, titulares en minúsculas con una serif suave, tinta oscura cálida, el dorado del escudo como marcador, botones de contorno en píldora y sombras casi invisibles. */
+:root{
+  --wine:#5E1B43; --wine-dark:#4A1535; --sun:#F2A51A; --sun-soft:#FFF1D9;
+  --rose:#F7EFE9; --white:#FDFBF9; --ink:#2B1A07; --muted:#5C4A3A; --line:#E6DCD2; --r:12px;
+  --serif:"Fraunces",Georgia,serif; --sans:"Geist",system-ui,sans-serif;
+}
+body{background:#FDFBF9;color:#171717}
+h1,h2,h3{font-weight:600!important;text-transform:lowercase;letter-spacing:0;color:#2B1A07}
+.greet{text-transform:lowercase;color:var(--wine)}
+.hero{background:#FDFBF9}
+.hero h1{font-size:clamp(34px,4.6vw,58px)!important;line-height:1.08}
+.btn{border-radius:20px;background:transparent;color:#171717;border:2px solid #171717;box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.btn:hover{background:#171717;color:#FDFBF9}
+.btn-wine,.btn-wa{background:transparent;color:#171717}
+.cta-top{border-color:#171717}
+.levels-mini a{border-radius:20px;border-color:#171717}
+section.alt{background:#F7EFE9}
+.level{border-radius:12px;border-color:#171717;border-top-width:1px;box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.level:nth-child(n){border-top-color:#171717}
+.level h3::after{content:"";display:block;width:56px;height:6px;border-radius:6px;background:var(--sun);margin-top:6px}
+.facil figure{border-radius:12px}
+.clubs .box{border-radius:12px}
+.clubs li{border-radius:20px;background:var(--sun-soft)}
+.values div{border-left-color:var(--sun)}
+.ident img{border-radius:12px}
+.tau{background:var(--sun)}
+.enroll{background:#2B1A07;border-radius:12px 12px 56px 12px}
+.enroll .btn-sun{background:var(--sun);color:#2B1A07;border-color:var(--sun)}
+.enroll .btn-ghost{border-color:#FDFBF9;color:#FDFBF9}
+.enroll .btn-ghost:hover{background:#FDFBF9;color:#2B1A07}
+.contact img{border-radius:12px}
+footer{background:var(--sun);color:#2B1A07;border-radius:56px 56px 0 0}
+footer a{color:#2B1A07}
+@media (max-width:380px){
+  .brand b{font-size:16px}
+  .brand img{height:38px}
+  .cta-top{padding:8px 12px;min-height:42px}
+  .top .wrap{gap:10px}
+}
+</style>
+</head>
+<body>
+
+<div class="proposal" role="note">
+  <div class="wrap">
+    <span>Vista previa de rediseño propuesta para el Colegio Reynosa. No es el sitio oficial.</span>
+    <button type="button" id="openChanges">Ver qué mejoramos</button>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <img src="https://colegio-reynosa.edu.mx/assets/img/logo/logo.png" alt="" width="41" height="54">
+      <span><b>Colegio Reynosa</b><small>Paz y Bien</small></span>
+    </a>
+    <nav class="main" aria-label="Principal">
+      <a href="#niveles">Niveles</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#clubes">Clubes</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="plat" href="https://colegioreynosa.appssolution.net/Acceso/login.html" target="_blank" rel="noopener">Plataforma</a>
+    <a class="btn btn-wine cta-top" href="#inscripciones">Inscríbete</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="greet" aria-hidden="true">Paz y Bien</p>
+      <h1>Colegio franciscano en Reynosa, de kínder a preparatoria</h1>
+      <p class="lead">Formación integral con valores, pensamiento crítico y fe, en un ambiente de fraternidad. Una sola escuela para toda la vida escolar de tus hijos.</p>
+      <div class="ctas">
+        <a class="btn btn-wine" href="#inscripciones">Ver cómo inscribirse</a>
+        <a class="btn btn-wa" href="https://wa.me/528993148028?text=Hola%2C%20quiero%20informes%20de%20inscripci%C3%B3n" target="_blank" rel="noopener">Pedir informes por WhatsApp</a>
+      </div>
+      <div class="levels-mini">
+        <a href="#niveles">Kínder</a><a href="#niveles">Primaria</a><a href="#niveles">Secundaria</a><a href="#niveles">Preparatoria</a>
+      </div>
+    </div>
+    <div class="photos">
+      <img class="tall" src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/Mural400x480.png" alt="Pasillo del Colegio Reynosa con mural de colores">
+      <img class="sq" src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/Canchas400x400.png" alt="Cancha del colegio">
+      <img class="sq" src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/Inglesia400x600.png" alt="Capilla del colegio">
+    </div>
+  </div>
+</section>
+
+<section class="block" id="niveles">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="tau" aria-hidden="true"></span><h2>Niveles educativos</h2></div>
+      <p>Cada nivel con su propia coordinación y el mismo modelo de formación en valores.</p>
+    </div>
+    <div class="levels">
+      <article class="level">
+        <h3>Kínder</h3>
+        <p>Desarrollo de habilidades motrices, cognitivas y socioemocionales a través del juego.</p>
+        <ul><li>Gimnasio neuromotor</li><li>Laboratorio de computación</li><li>Educación en la fe</li></ul>
+      </article>
+      <article class="level">
+        <h3>Primaria</h3>
+        <p>Habilidades académicas y personales con énfasis en valores y tecnología.</p>
+        <ul><li>Español, matemáticas y ciencias</li><li>Inglés como segunda lengua</li><li>Historia y geografía</li><li>Tecnología</li></ul>
+      </article>
+      <article class="level">
+        <h3>Secundaria</h3>
+        <p>Un currículo que reta a los alumnos a alcanzar la excelencia académica y personal.</p>
+        <ul><li>Matemáticas, física y biología</li><li>Inglés e historia</li><li>Educación física y artes</li><li>Tecnología y computación</li></ul>
+      </article>
+      <article class="level">
+        <h3>Preparatoria</h3>
+        <p>Un programa que prepara para el éxito en un ambiente dinámico y acogedor.</p>
+        <ul><li>Bachillerato general</li><li>Plan semestral</li><li>Inglés y francés</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="instalaciones">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="tau" aria-hidden="true"></span><h2>Instalaciones</h2></div>
+      <p>Un ambiente de aprendizaje seguro, innovador y enriquecedor. Ven a conocernos.</p>
+    </div>
+    <div class="facil">
+      <figure><img src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/InsGym.png" alt="Gimnasio neuromotor con colchonetas de colores" loading="lazy"><figcaption><b>Gimnasio neuromotor</b><span>Mente y cuerpo en armonía para un crecimiento integral.</span></figcaption></figure>
+      <figure><img src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/InsCanchas.png" alt="Canchas deportivas" loading="lazy"><figcaption><b>Canchas deportivas</b><span>Espacios para competir, aprender y crecer en fraternidad.</span></figcaption></figure>
+      <figure><img src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/InsIglesia.png" alt="Capilla del colegio" loading="lazy"><figcaption><b>Capilla</b><span>El corazón espiritual de la comunidad educativa.</span></figcaption></figure>
+    </div>
+    <p class="more"><b>También:</b><span>Aulas interactivas</span><span>Laboratorio de ciencias</span><span>Laboratorio de informática</span></p>
+  </div>
+</section>
+
+<section class="block" id="clubes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="tau" aria-hidden="true"></span><h2>Clubes y actividades</h2></div>
+      <p>Para desarrollar habilidades y explorar intereses en un entorno divertido.</p>
+    </div>
+    <div class="clubs">
+      <div class="box"><h3>Clubes</h3><ul><li>Fútbol</li><li>Básquetbol</li><li>Voleibol</li><li>Danza</li><li>Computación</li><li>Matemáticas</li></ul></div>
+      <div class="box"><h3>Actividades</h3><ul><li>Oratoria</li><li>Spelling Bee</li><li>Banda de guerra</li><li>Coro</li><li>Ajedrez</li><li>Valores</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="nosotros">
+  <div class="wrap ident">
+    <img src="https://colegio-reynosa.edu.mx/assets/img/video/SanFrancisco.jpg" alt="Imagen de San Francisco de Asís" loading="lazy">
+    <div class="text">
+      <div class="sec-head" style="margin-bottom:0">
+        <div class="t"><span class="tau" aria-hidden="true"></span><h2>Identidad franciscana</h2></div>
+      </div>
+      <p>Somos parte de la obra educativa de las Hermanas Franciscanas de la Inmaculada Concepción, congregación nacida en la Ciudad de México en 1874 y fundada por Fray José del Refugio Morales Córdova (OFM) y Dolores Vázquez, Sor María de la Luz de Cristo Crucificado.</p>
+      <p>Nuestra misión es la formación integral de los alumnos: cultivar sus facultades intelectuales, el recto juicio y el pensamiento crítico, y promover el respeto y la solidaridad en la familia, la escuela y la sociedad.</p>
+      <div class="values">
+        <div><b>Misericordia</b><span>Amabilidad, escucha, generosidad y perdón.</span></div>
+        <div><b>Fraternidad</b><span>Unidad cercana, cordial y alegre con el hermano.</span></div>
+        <div><b>Paz</b><span>Relaciones armónicas con Dios, las personas y la creación.</span></div>
+        <div><b>Armonía con la naturaleza</b><span>Cuidado de la vida al estilo de San Francisco.</span></div>
+        <div><b>Libertad</b><span>Decidir con base en la verdad.</span></div>
+        <div><b>Oración y minoridad</b><span>Apertura a la fe y sencillez al ejemplo de Jesús.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="inscripciones">
+  <div class="wrap">
+    <div class="enroll">
+      <div>
+        <h2>Inscripciones abiertas</h2>
+        <p>La inscripción se hace en línea, en la plataforma del colegio.</p>
+        <ol>
+          <li>Pide informes por WhatsApp o visítanos de lunes a viernes, de 7:30 a 14:30.</li>
+          <li>Llena tu solicitud en la plataforma de inscripción.</li>
+          <li>Sigue las indicaciones de la plataforma para completarla.</li>
+        </ol>
+      </div>
+      <div class="acts">
+        <a class="btn btn-sun" href="https://colegioreynosa.appssolution.net/inscripcion.aspx" target="_blank" rel="noopener">Inscribirme en línea</a>
+        <a class="btn btn-ghost" href="https://wa.me/528993148028?text=Hola%2C%20quiero%20informes%20de%20inscripci%C3%B3n" target="_blank" rel="noopener">Pedir informes por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:20px"><div class="t"><span class="tau" aria-hidden="true"></span><h2>Visítanos</h2></div></div>
+      <dl>
+        <div><dt>Dirección</dt><dd>Pino #350, colonia Del Valle, Reynosa, Tamaulipas. <a href="https://www.google.com/maps/search/?api=1&query=Colegio+Reynosa+Pino+350+Del+Valle+Reynosa" target="_blank" rel="noopener">Cómo llegar</a></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+528999245335">899 924 5335</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/528993148028" target="_blank" rel="noopener">899 314 8028</a></dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes, 7:30 a 14:30</dd></div>
+      </dl>
+    </div>
+    <img src="https://colegio-reynosa.edu.mx/assets/img/instalaciones/Canchas400x400.png" alt="" loading="lazy">
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Colegio Reynosa. Paz y Bien.</span>
+    <ul>
+      <li><a href="https://www.facebook.com/ColegioReynosaAC" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.youtube.com/@ColegioReynosaOFICIAL" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog id="changes" aria-labelledby="cT">
+  <div class="dh"><h2 id="cT">Qué mejoramos</h2><button class="x" type="button" data-close aria-label="Cerrar">×</button></div>
+  <div class="db">
+    <ol>
+      <li><b>Carga en segundos, no en minutos</b><span>Cada imagen de nivel del sitio actual pesa unos 15 MB y las fotos de clubes e instalaciones entre 5 y 7 MB. Solo la página de Oferta Académica descarga cerca de 60 MB: en un celular con datos casi no abre.</span></li>
+      <li><b>Teléfono y WhatsApp con un toque</b><span>Hoy son texto plano: no se pueden tocar para llamar o escribir.</span></li>
+      <li><b>Inscripción en la portada</b><span>Pasos claros, horario y botón directo a la plataforma de inscripción.</span></li>
+      <li><b>Textos completos</b><span>La historia dice "La congregación de Hermanas Franciscanas… en la Ciudad de México en 1874." y no termina la idea.</span></li>
+      <li><b>Ortografía</b><span>"Oferta Academica", "Ubicacion", "INSCRIBETE" y "Va a Vivir Son" en un título.</span></li>
+      <li><b>Imágenes bien descritas</b><span>Las fotos de las cuatro coordinadoras tienen el mismo texto alternativo: "Madre Elvia Diaz".</span></li>
+      <li><b>Listo para Google</b><span>Todas las páginas se llaman igual ("Colegio Reynosa") y no tienen descripción.</span></li>
+    </ol>
+  </div>
+</dialog>
+
+<script>
+const dlg = document.getElementById("changes");
+document.getElementById("openChanges").addEventListener("click", () => dlg.showModal());
+document.querySelector("[data-close]").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+</script>
+</body>
+</html>
